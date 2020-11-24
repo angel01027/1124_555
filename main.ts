@@ -48,3 +48,9 @@ basic.forever(function () {
         }
     }
 })
+basic.forever(function () {
+    if (L - game.score() == 5) {
+        sprite.delete()
+        game.gameOver()
+    }
+})
